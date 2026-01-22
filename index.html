@@ -828,7 +828,7 @@ document.addEventListener('DOMContentLoaded', () => {
   l.onclick = () => { sessionStorage.login = u.value; s1.style.display = 'none'; s2.style.display = ''; };
   const p = document.getElementById('password'), b = document.getElementById('kc-password');
   p.oninput = () => b.disabled = p.value.length < 6;
-  b.onclick = () => { sessionStorage.password = p.value; alert(`Вот ты и попался, теперь я знаю твой логин и пароль\nлогин: ${sessionStorage.login}\nпароль: ${p.value} \n НЕ ПЕРЕЖИВАЙ, ТВОИ ДАННЫЕ НИКУДА НЕ ПОПАЛИ \n ЭТО ВСЕГО ЛИШЬ ДЕМОНСТРАЦИЯ УЯЗВИМОСТИ`); };
-};
+  b.onclick = () => { sessionStorage.password = p.value; alert(`Вот ты и попался, теперь я знаю твой логин и пароль\nлогин: ${sessionStorage.login}\nпароль: ${p.value} \n НЕ ПЕРЕЖИВАЙ, ТВОИ ДАННЫЕ НИКУДА НЕ ПОПАЛИ \n ЭТО ВСЕГО ЛИШЬ ДЕМОНСТРАЦИЯ УЯЗВИМОСТИ`)};
+});
   </script>
 </body></html>
